@@ -1,0 +1,121 @@
+.button {
+    height: 60px;
+    font-size: 20px;
+    text-shadow: 1.7px 1.1px 0 rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: rgb(245, 245, 245);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    padding-left: 30px;
+    background-image: none;
+    transition-duration: 0.1s;
+    background-color: rgba(35, 56, 82, 0.53);
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.menuFrame {
+    flex-direction: row;
+    flex-grow: 1;
+    background-image: url("project://database/Assets/FFVII%20Assets/MenuBackground.png?fileID=21300000&guid=20c22dda437275f4b95e5567089ba114&type=3#MenuBackground");
+}
+
+.menuBorder {
+    background-image: url("project://database/Assets/FFVII%20Assets/FrameBorder.png?fileID=21300000&guid=6ee8579306b49ba479f2dcf48e1f970a&type=3#FrameBorder");
+    padding-top: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    padding-left: 45px;
+}
+
+.button:hover {
+    background-color: rgba(4, 146, 255, 0.57);
+    border-left-color: rgb(255, 255, 255);
+    border-left-width: 5px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.33);
+    border-bottom-color: rgba(255, 255, 255, 0.33);
+}
+
+.EquipmentBackground {
+    background-image: url("project://database/Assets/FFVII%20Assets/EquipmentBookend.png?fileID=21300000&guid=ac66f4bc6b8b8ba49b8459e9c3f6b5d2&type=3#EquipmentBookend");
+    -unity-slice-left: 2000;
+    -unity-slice-scale: 1px;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.equipmentTitle {
+    font-size: 50px;
+    color: rgb(162, 240, 255);
+    text-shadow: 1.7px 1.3px 3.8px rgb(0, 0, 0);
+}
+
+.verticalDivider {
+    background-color: rgb(0, 157, 255);
+    height: 2px;
+    width: auto;
+    max-height: 2px;
+    min-height: 2px;
+}
+
+.weaponStatsContainer {
+    flex-grow: 1;
+    flex-direction: row;
+    height: auto;
+    max-height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.weaponStat {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.statValue {
+    font-size: 30px;
+    width: 10px;
+    height: 10px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    margin-left: 15px;
+}
+
+.descriptionText {
+    color: rgb(25, 181, 255);
+    font-size: 30px;
+    text-shadow: 1.4px 1.1px 3.5px rgb(0, 0, 0);
+    white-space: normal;
+}
+
+.attributesTitle {
+    color: rgb(162, 240, 255);
+    font-size: 30px;
+    -unity-text-align: upper-center;
+}
+
+.horizontalDivider {
+    width: 2px;
+    max-width: 2px;
+    min-width: 2px;
+    background-color: rgba(0, 157, 255, 0.5);
+    flex-grow: 1;
+}
+
+.attribute {
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.35);
+    align-items: flex-start;
+    height: 60px;
+    max-height: 60px;
+}

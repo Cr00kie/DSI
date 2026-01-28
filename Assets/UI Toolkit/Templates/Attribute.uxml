@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+        <ui:Label tabindex="-1" text="99&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

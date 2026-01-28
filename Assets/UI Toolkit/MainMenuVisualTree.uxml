@@ -1,0 +1,94 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ItemTemplate" src="project://database/Assets/UI%20Toolkit/Templates/ItemTemplate.uxml?fileID=9197481963319205126&amp;guid=b28e70a23a386a543b5b7acb66d6c759&amp;type=3#ItemTemplate" />
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=ee0b00dc542b8154da84a4e2e74b7966&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="Container" style="background-image: url(&quot;project://database/Assets/IMG/FondoEstrellas.jpg?fileID=2800000&amp;guid=492549a919a096a4c845d27bcd7ef3d8&amp;type=3#FondoEstrellas&quot;); -unity-background-image-tint-color: rgb(121, 255, 145); transition-property: all; transition-duration: 0s; transition-timing-function: ease; transition-delay: 0s; flex-grow: 1;">
+        <ui:VisualElement name="MenuBorder" class="menuBorder" style="flex-grow: 1; -unity-slice-scale: 0.5px;">
+            <ui:VisualElement name="MenuFrame" class="menuFrame">
+                <ui:VisualElement name="MenuTitle" style="flex-grow: initial; width: 60px;">
+                    <ui:Label tabindex="-1" text="Party" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="white-space: nowrap; rotate: 90deg; transform-origin: center; font-size: 45px; color: rgb(255, 255, 255); -unity-font-style: bold; letter-spacing: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="HighlightedSection" style="flex-grow: 1; flex-direction: row; background-image: url(&quot;project://database/Assets/FFVII%20Assets/MenuBackgroundHighlight.png?fileID=21300000&amp;guid=f0b613541cb9bee48883d38c7dee23bd&amp;type=3#MenuBackgroundHighlight&quot;);">
+                    <ui:VisualElement name="CharacterButtons" style="flex-grow: 5; width: 314px;">
+                        <ui:Button text="Cloud" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloudButton" class="button" />
+                        <ui:Button text="Tifa" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Personaje2Button" class="button" />
+                        <ui:Button text="..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExtraButton" class="button" />
+                        <ui:Button text="..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExtraButton2" class="button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CharacterInfo" style="flex-grow: 1; margin-right: 50px; margin-left: 50px; flex-shrink: 1;">
+                        <ui:VisualElement name="Equipment" style="flex-grow: 1; flex-direction: column;">
+                            <ui:Instance template="ItemTemplate" name="ItemTemplate">
+                                <AttributeOverrides element-name="Val3" text="0" />
+                            </ui:Instance>
+                            <ui:Instance template="ItemTemplate" name="ItemTemplate">
+                                <AttributeOverrides element-name="Name" text="Iron Bangle" />
+                                <AttributeOverrides element-name="Val" text="0" />
+                                <AttributeOverrides element-name="Val1" text="0" />
+                                <AttributeOverrides element-name="Val2" text="0" />
+                                <AttributeOverrides element-name="Description" text="An armband crafted from iron. A sophisticated accoutrement with a reasonable price tag." />
+                            </ui:Instance>
+                            <ui:Instance template="ItemTemplate" name="ItemTemplate">
+                                <AttributeOverrides element-name="Name" text="Power Wristguards" />
+                                <AttributeOverrides element-name="Val1" text="0" />
+                                <AttributeOverrides element-name="Val2" text="0" />
+                                <AttributeOverrides element-name="Val3" text="0" />
+                                <AttributeOverrides element-name="Description" text="Wristguards capable of drawing out power latent in the wearer’s body." />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Attributes" style="flex-grow: 1; flex-direction: column;">
+                            <ui:Label tabindex="-1" text="Attributes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AttributesTitle" class="attributesTitle" style="border-bottom-width: 2px; border-bottom-color: rgb(162, 240, 255); align-self: center;" />
+                            <ui:VisualElement name="AttributesSection" style="flex-grow: 1; flex-direction: row; margin-top: 50px; margin-bottom: 50px;">
+                                <ui:VisualElement name="AttLeft" style="flex-grow: 1; margin-right: 25px; flex-shrink: 1;">
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+                                        <ui:Label tabindex="-1" text="Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="99&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1; background-color: rgba(47, 165, 255, 0.1);">
+                                        <ui:Label tabindex="-1" text="Magic Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="89" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+                                        <ui:Label tabindex="-1" text="Defense" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="46" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1; background-color: rgba(47, 165, 255, 0.1);">
+                                        <ui:Label tabindex="-1" text="Magic Defense" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="38" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+                                        <ui:Label tabindex="-1" text="Strength" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="35" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1; background-color: rgba(47, 165, 255, 0.1);">
+                                        <ui:Label tabindex="-1" text="Magic" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                        <ui:Label tabindex="-1" text="29" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="statValue" style="-unity-text-align: upper-right; flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="Divider" class="horizontalDivider" style="flex-grow: 1;" />
+                                <ui:VisualElement name="AttRight" style="flex-grow: 1; margin-left: 25px; flex-shrink: 1; flex-basis: 0;">
+                                    <ui:Label tabindex="-1" text="Affinities" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AffinitiesText" class="descriptionText" style="-unity-font-style: bold;" />
+                                    <ui:Label tabindex="-1" text="Resistances" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResistancesText" class="descriptionText" style="-unity-font-style: bold;" />
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+                                        <ui:Label tabindex="-1" text="Lesser Resistances" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1; background-color: rgba(47, 165, 255, 0.1);">
+                                        <ui:Label tabindex="-1" text="Greater Resistances" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1;">
+                                        <ui:Label tabindex="-1" text="Immunities" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="Attribute" class="attribute" style="flex-grow: 1; background-color: rgba(47, 165, 255, 0.1);">
+                                        <ui:Label tabindex="-1" text="Absorbed Elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="statValue" style="flex-grow: 1; flex-shrink: 1;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CharacterStats" style="flex-grow: 1; flex-shrink: 1; width: 386px;">
+                        <ui:Label tabindex="-1" text="Cloud" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CharacterName" style="color: rgb(191, 245, 255); font-size: 40px; text-shadow: 2.1px 2.4px 0 rgb(0, 0, 0); -unity-text-align: upper-center;" />
+                        <ui:VisualElement name="Artwork" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/FFVII%20Assets/cloudArtwork.png?fileID=2800000&amp;guid=57a2bdd98a9d25949ab8642c60ba8402&amp;type=3#cloudArtwork&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="IronBladeInfo" class="EquipmentBackground" style="flex-grow: 1; padding-left: 70px;">
+        <ui:Label tabindex="-1" text="Iron Blade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="equipmentTitle" />
+        <ui:VisualElement name="Divider" class="verticalDivider" style="flex-grow: 1;" />
+        <ui:VisualElement name="WeaponStats" class="weaponStatsContainer" style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <ui:VisualElement name="Attk" class="weaponStat" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/FFVII%20Assets/swordIcon.png?fileID=21300000&amp;guid=1f392502020dacf4092ebbdcfafbda17&amp;type=3#swordIcon&quot;); height: 52px; flex-shrink: 0;" />
+                <ui:Label tabindex="-1" text="38" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Val1" class="statValue" style="flex-shrink: 1; flex-grow: 1; height: 48px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Mana" class="weaponStat" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/FFVII%20Assets/ringIcon.png?fileID=21300000&amp;guid=40c7702e2e0d28f4c9209c2d1576e018&amp;type=3#ringIcon&quot;); height: 52px; flex-shrink: 0;" />
+                <ui:Label tabindex="-1" text="8&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Val2" class="statValue" style="flex-shrink: 1; flex-grow: 1; height: 48px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Defense" class="weaponStat" style="flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/FFVII%20Assets/spikesIcon.png?fileID=21300000&amp;guid=0f31e1ba8a35c0a4a9e9655feaa963a0&amp;type=3#spikesIcon&quot;); height: 52px; flex-shrink: 0;" />
+                <ui:Label tabindex="-1" text="16" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Val3" class="statValue" style="flex-shrink: 1; flex-grow: 1; height: 48px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Space" style="flex-grow: 4; width: 259px;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="A greatsword cast from carefully selected iron ore." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Description" class="descriptionText" />
+    </ui:VisualElement>
+</ui:UXML>
