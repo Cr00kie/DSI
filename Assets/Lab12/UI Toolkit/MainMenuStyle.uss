@@ -25,11 +25,11 @@
 .menuFrame {
     flex-direction: row;
     flex-grow: 1;
-    background-image: url("project://database/Assets/FFVII%20Assets/MenuBackground.png?fileID=21300000&guid=20c22dda437275f4b95e5567089ba114&type=3#MenuBackground");
+    background-image: url("project://database/Assets/FFVII%20Assets/MenuBackground.png?fileID=21300000&guid=3bdb5c9e7da54e34b9069a3cd1267f36&type=3#MenuBackground");
 }
 
 .menuBorder {
-    background-image: url("project://database/Assets/FFVII%20Assets/FrameBorder.png?fileID=21300000&guid=6ee8579306b49ba479f2dcf48e1f970a&type=3#FrameBorder");
+    background-image: url("project://database/Assets/FFVII%20Assets/FrameBorder.png?fileID=21300000&guid=f55d1187f754fd3418fe6c1e6241d86b&type=3#FrameBorder");
     padding-top: 45px;
     padding-right: 45px;
     padding-bottom: 45px;
@@ -47,7 +47,7 @@
 }
 
 .EquipmentBackground {
-    background-image: url("project://database/Assets/FFVII%20Assets/EquipmentBookend.png?fileID=21300000&guid=ac66f4bc6b8b8ba49b8459e9c3f6b5d2&type=3#EquipmentBookend");
+    background-image: url("project://database/Assets/FFVII%20Assets/EquipmentBookend.png?fileID=21300000&guid=c57eabc2ab6709147a6483b05fe1a035&type=3#EquipmentBookend");
     -unity-slice-left: 2000;
     -unity-slice-scale: 1px;
     justify-content: center;
@@ -118,4 +118,15 @@
     align-items: flex-start;
     height: 60px;
     max-height: 60px;
+}
+
+.seleccionado {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
 }

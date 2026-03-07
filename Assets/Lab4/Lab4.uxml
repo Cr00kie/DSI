@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Boton" src="project://database/Assets/Lab4/Boton.uxml?fileID=9197481963319205126&amp;guid=e43e75425773e2d478f2fe7958237c58&amp;type=3#Boton" />
+    <Style src="project://database/Assets/Lab4/Lab4.uss?fileID=7433441132597879392&amp;guid=41b239d05a6fa034ea838f0e6440c1c5&amp;type=3#Lab4" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="Personajes" class="panel" style="flex-grow: 1;">
+            <ui:Instance template="Boton" name="Boton" />
+            <ui:Instance template="Boton" name="Boton" />
+            <ui:Instance template="Boton" name="Boton" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Desplegables" class="panel" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Estadísticas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 50px; -unity-text-align: upper-center; -unity-font-style: bold;" />
+            <ui:VisualElement name="Div" style="flex-grow: 1; max-height: 2px; min-height: 2px; background-color: rgb(255, 255, 255); width: 75%; align-items: auto; align-self: center;" />
+            <StatusCustomControl Icon="swordIcon" Nombre="Hola" Valor="1" style="flex-direction: row; align-self: auto; align-items: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

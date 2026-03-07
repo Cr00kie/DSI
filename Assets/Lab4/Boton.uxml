@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Boton" class="button">
+        <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; background-image: url(&quot;project://database/Assets/Lab12/UI%20Assets/1.%20Free%20Hologram%20Interface%20Wenrexa/Icons/08.png?fileID=21300000&amp;guid=71a3d29aff9fc2446a987e2cf005f498&amp;type=3#08&quot;); max-height: 100%; min-height: 100%; max-width: 100px; min-width: 100px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; -unity-background-scale-mode: scale-to-fit;" />
+        <ui:Label tabindex="-1" text="Personaje..." parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="flex-grow: 1; color: rgb(255, 255, 255); -unity-font: url(&quot;project://database/Assets/Lab12/UI%20Toolkit/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=95ff81f9f5337ab4f82e2f6b07a4450a&amp;type=3#NotInter-Regular&quot;); -unity-font-style: normal; -unity-text-align: middle-left; text-overflow: ellipsis; font-size: 50%; margin-left: 30px;" />
+    </ui:VisualElement>
+</ui:UXML>

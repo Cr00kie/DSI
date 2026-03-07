@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="tarjeta" style="flex-grow: 1; background-color: rgb(51, 70, 37); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); width: 200px; height: 300px; max-height: 300px;">
+        <ui:VisualElement name="ImagenSuperior" style="flex-grow: 1; background-color: rgb(166, 142, 54);" />
+        <ui:VisualElement name="nombre" style="flex-grow: 1; -unity-text-align: middle-left; justify-content: center;">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="nombreLabel" style="-unity-text-align: middle-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="apellido" style="flex-grow: 1; justify-content: center;">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="apellidoLabel" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

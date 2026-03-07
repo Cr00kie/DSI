@@ -1,0 +1,33 @@
+.button:hover {
+    background-image: url("project://database/Assets/Lab12/UI%20Assets/1.%20Free%20Hologram%20Interface%20Wenrexa/Button%201/Button%20Hover.png?fileID=21300000&guid=6a676e6be8aba014eb7c2c51399f1e07&type=3#Button Hover");
+}
+
+.button {
+    background-image: url("project://database/Assets/Lab12/UI%20Assets/1.%20Free%20Hologram%20Interface%20Wenrexa/Button%201/Button%20Normal.png?fileID=21300000&guid=81599e78893574141bab353fc0556b48&type=3#Button Normal");
+    max-height: 100px;
+    min-height: 100px;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.button:active {
+    background-image: url("project://database/Assets/Lab12/UI%20Assets/1.%20Free%20Hologram%20Interface%20Wenrexa/Button%201/Button%20Active.png?fileID=21300000&guid=70077d08b0f696049a186d2f3bcf137b&type=3#Button Active");
+    -unity-background-image-tint-color: rgb(249, 0, 0);
+}
+
+.panel {
+    width: 50%;
+    transition-duration: 0.5s;
+    background-image: url("project://database/Assets/Lab12/UI%20Assets/1.%20Free%20Hologram%20Interface%20Wenrexa/Card%20X2/Card%20X3.png?fileID=21300000&guid=7ff2a6290f2bad74bb7fd90e1b54962a&type=3#Card X3");
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.panel:hover {
+    width: 75%;
+}

@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="contenedor" style="flex-grow: 1; flex-direction: row; background-color: rgb(28, 33, 53);">
+        <ui:VisualElement name="Izda" style="flex-grow: 1; background-color: rgb(176, 140, 32);">
+            <ui:VisualElement name="header" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="img1" style="flex-grow: 1; background-color: rgb(99, 56, 39); background-image: resource(&apos;Lab5/img1&apos;);" />
+                <ui:VisualElement name="img2" style="flex-grow: 1; background-color: rgb(142, 30, 30); background-image: resource(&apos;Lab5/img2&apos;);" />
+                <ui:VisualElement name="img3" style="flex-grow: 1; background-color: rgb(61, 65, 77); background-image: resource(&apos;Lab5/img3&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" style="flex-grow: 1; justify-content: center;">
+                <ui:TextField picking-mode="Ignore" label="Nombre" value="..." name="InputNombre" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" style="flex-grow: 1; justify-content: center;">
+                <ui:TextField picking-mode="Ignore" label="Apellido" value="..." name="InputApellido" />
+            </ui:VisualElement>
+            <ui:Toggle label="Modificar" name="ToggleModificar" />
+            <ui:Button text="Crear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonCrear" />
+            <ui:Button text="Guardar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonGuardar" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Dcha" style="flex-grow: 1; flex-direction: row; align-items: center;" />
+    </ui:VisualElement>
+</ui:UXML>

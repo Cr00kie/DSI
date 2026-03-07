@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Lab3/style.uss?fileID=7433441132597879392&amp;guid=26d4cae0e77e22947b86b685d218b4f6&amp;type=3#style" />
+    <ui:VisualElement name="ContenedorPadre" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="izqa" class="contenedor">
+            <ui:VisualElement name="item1" class="item" />
+            <ui:VisualElement name="item2" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item3" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item4" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item5" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item6" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item7" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item8" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item9" class="item" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="dcha" class="contenedor" style="flex-grow: 1; background-color: rgb(53, 80, 181); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
+            <ui:VisualElement name="item1" class="item" />
+            <ui:VisualElement name="item2" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item3" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item4" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item5" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item6" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item7" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item8" class="item" style="flex-grow: 1;" />
+            <ui:VisualElement name="item9" class="item" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

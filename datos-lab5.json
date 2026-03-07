@@ -1,0 +1,19 @@
+{
+    "Individuos": [
+        {
+            "nombre": "Ana",
+            "apellido": "Ríos",
+            "imagen": "Lab6/img1"
+        },
+        {
+            "nombre": "Luis",
+            "apellido": "Calvete",
+            "imagen": "Lab6/img2"
+        },
+        {
+            "nombre": "Marta",
+            "apellido": "Martínez",
+            "imagen": "Lab6/img3"
+        }
+    ]
+}
