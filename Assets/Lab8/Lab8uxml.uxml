@@ -1,0 +1,74 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Lab8/lab8uss.uss?fileID=7433441132597879392&amp;guid=4129a8838f49a3044b7a14180b620b35&amp;type=3#lab8uss" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="Nav" style="height: 10%; flex-direction: row;">
+            <ui:VisualElement name="Page1Nav" class="nav" />
+            <ui:VisualElement name="Page2Nav" class="nav" style="flex-grow: 1; background-color: rgb(71, 137, 78);" />
+            <ui:VisualElement name="Page3Nav" class="nav" style="flex-grow: 1; background-color: rgb(195, 172, 58); display: flex;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" style="flex-grow: 1; height: 90%;">
+            <ui:VisualElement name="P1" class="page" style="display: flex;">
+                <ui:Label tabindex="-1" text="Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="font-size: 45px; -unity-text-align: middle-center; height: 110px; -unity-font-style: bold;" />
+                <ui:VisualElement name="Content" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/FFVII%20Assets/cloudArtwork.png?fileID=21300000&amp;guid=57a2bdd98a9d25949ab8642c60ba8402&amp;type=3#cloudArtwork&quot;);" />
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:VisualElement name="Profile" style="flex-grow: 1; flex-direction: row; height: auto; max-height: 20%;">
+                            <ui:VisualElement style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="Knight of Lodis" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 25px;" />
+                                <ui:VisualElement name="Level" style="flex-grow: 1; flex-direction: row;">
+                                    <ui:Label tabindex="-1" text="Level" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 30px; justify-content: flex-start; -unity-text-align: middle-right; flex-shrink: 0; flex-grow: 0;" />
+                                    <ui:ProgressBar value="22" title="22/100 EXP" style="justify-content: center; width: 292px; flex-grow: 1; flex-shrink: 1;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-grow: 1;">
+                            <ui:Foldout text="Foldout" value="true">
+                                <ui:Label tabindex="-1" text="Attack: 50 pp" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 25px;" />
+                                <ui:Label tabindex="-1" text="Speed: 50 sp" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 25px;" />
+                                <ui:Label tabindex="-1" text="Defense: 12 dp" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 25px;" />
+                                <ui:Label tabindex="-1" text="Special Attack: 50 sp" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 25px;" />
+                                <ui:Label tabindex="-1" text="Special Defense: 12 sp" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 25px;" />
+                            </ui:Foldout>
+                            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Story" style="font-size: 20px; -unity-font: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="P2" class="page" style="flex-grow: 1; display: none; background-color: rgb(71, 137, 78);">
+                <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="font-size: 45px; -unity-text-align: middle-center; height: 110px; -unity-font-style: bold;" />
+                <ui:VisualElement name="Inventory" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap;">
+                    <ui:VisualElement name="I1" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I2" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I3" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I4" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I5" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I6" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I7" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I8" class="item" style="flex-grow: 1;" />
+                    <ui:VisualElement name="I9" class="item" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="P3" class="page" style="flex-grow: 1; display: none; background-color: rgb(195, 173, 58);">
+                <ui:Label tabindex="-1" text="Ajustes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="font-size: 45px; -unity-text-align: middle-center; height: 110px; -unity-font-style: bold;" />
+                <ui:VisualElement name="Content" style="flex-grow: 1; width: 75%; align-items: center; align-self: center; justify-content: flex-start;">
+                    <ui:VisualElement name="FPS" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="FPS Limit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingName" style="flex-shrink: 1; flex-grow: 0; -unity-text-align: middle-left;" />
+                        <ui:Slider high-value="100" direction="Horizontal" show-input-field="false" name="Slider" style="width: auto; flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Sound" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="Sound" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingName" style="flex-shrink: 0; flex-grow: 0; -unity-text-align: middle-left;" />
+                        <ui:Slider high-value="100" direction="Horizontal" show-input-field="false" name="Slider" style="width: auto; flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Music" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="Music" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingName" style="flex-shrink: 0; flex-grow: 0; -unity-text-align: middle-left;" />
+                        <ui:Slider high-value="100" direction="Horizontal" show-input-field="false" name="Slider" style="width: auto; flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Quality" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="Quality" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingName" style="flex-shrink: 0; flex-grow: 0; -unity-text-align: middle-left;" />
+                        <ui:EnumField type="UnityEngine.U2D.QualityDetail, Unity.2D.SpriteShape.Runtime" value="High" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

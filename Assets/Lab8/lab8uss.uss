@@ -1,0 +1,42 @@
+.item {
+    width: 33%;
+    height: 33px;
+    max-width: 33%;
+    min-width: 33%;
+    max-height: 33%;
+    min-height: 33%;
+    background-color: rgb(158, 161, 151);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    transition-duration: 0.2s;
+}
+
+.item:hover {
+    scale: 1.2 1.2;
+}
+
+.nav {
+    flex-grow: 1;
+    background-color: rgb(66, 121, 197);
+    width: 33%;
+    transition-duration: 0.2s;
+}
+
+.nav:hover {
+    width: 50%;
+}
+
+.page {
+    flex-grow: 1;
+    background-color: rgb(67, 122, 198);
+    display: none;
+    width: 100%;
+    align-self: center;
+    transition-duration: 0.2s;
+}
